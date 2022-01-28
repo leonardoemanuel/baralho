@@ -1,0 +1,36 @@
+@font-face {
+    font-family:'coco' ;
+    src: url(Candy\ Beans.otf) format('opentype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'coco';
+    font-weight: normal;
+
+}
+section table{
+    text-align: center;
+    width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 2em;
+}
+h1{
+    padding: 10px 10px 10px 20px;
+    font-family: 'coco';
+    font-size: 3em;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+}
+tr:nth-child(2n){
+    background-color: rgb(182, 182, 182);
+}
+input{
+    padding: 10px;
+    height: 100%;
+}

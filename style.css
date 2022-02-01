@@ -10,19 +10,31 @@
     font-weight: normal;
 
 }
-section table{
+div table{
     text-align: center;
-    width: 1000px;
     margin: 30px auto;
-    padding: 10px;
-    font-size: 2em;
+    border-collapse: collapse;
 }
-h1{
-    padding: 10px 10px 10px 20px;
-    font-family: 'coco';
-    font-size: 3em;
+div#tabelaprincipal{
+    overflow-x: auto;
+    
+   
 }
 
+td{
+    border: 1px solid black;
+}
+table th{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.5em;
+}
+caption{
+    padding: 10px 10px 10px 20px;
+    font-family: 'coco';
+    font-size: 2em;
+    color: black;
+}
 img{
     display: block;
     margin: 20px auto;
@@ -33,4 +45,5 @@ tr:nth-child(2n){
 input{
     padding: 10px;
     height: 100%;
+    width: 100%;
 }

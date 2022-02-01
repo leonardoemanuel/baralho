@@ -4,9 +4,6 @@ let p2=window.prompt('Jogador 2 :')
 let p3=window.prompt('Jogador 3 :')
 let p4=window.prompt('Jogador 4 :')
 let max =window.prompt('Pontos maximos por partidas')
-if(max.valueOf.length==0){
-    max=4
-}
 
 let j1=document.getElementById('player1')
 let j2=document.getElementById('player2')

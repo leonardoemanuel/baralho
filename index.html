@@ -8,7 +8,25 @@
     <title>Baralho</title>
 </head>
 <body>
-    
+        <div id="infojogadores">
+            <h1>Preencha os campos abaixo:</h1>
+            <p>Jogador 1 ou dupla 1:</p>
+            <input type="text" id="textjogador1" class="inputjogadores">
+
+            <p>Jogador 2 ou dupla 2:</p>
+            <input type="text" id="textjogador2" class="inputjogadores">
+
+            <p>Jogador 3 ou dupla 3:</p>
+            <input type="text" id="textjogador3" class="inputjogadores">
+
+            <p>Jogador 4 ou dupla 4:</p>
+            <input type="text" id="textjogador4" class="inputjogadores">
+
+            <p>Pontos maximos para atingir uma queda:</p>
+            <input type="number" id="maxpontos">
+
+            <input type="button" value="Proximo" id="botaoproximo" onclick="proximo()">
+        </div>
         <div id="tabelaprincipal">
             <table>
                 <caption>Pontuação Baralho :</caption>
@@ -18,28 +36,28 @@
                     <th>Quedas</th>
                     <th>Adicionar</th>
             
-                <tr>
+                <tr id="linhajogador1">
                     <td id="player1">JOGADOR 1</td>
                     <td id="pontosj1">0</td>
                     <td id="quedasj1">0</td>
                     <td><input type="button" value="Adicionar" onclick="adicionarj1()"></td>
             
                 </tr>
-                <tr>
+                <tr id="linhajogador2">
                     <td id="player2">JOGADOR 2</td>
                     <td id="pontosj2">0</td>
                     <td id="quedasj2">0</td>
                     <td><input type="button" value="Adicionar" onclick="adicionarj2()"></td>
             
                 </tr>
-                <tr>
+                <tr id="linhajogador3">
                     <td id="player3">JOGADOR 3</td>
                     <td id="pontosj3">0</td>
                     <td id="quedasj3">0</td>
                     <td><input type="button" value="Adicionar" onclick="adicionarj3()"></td>
             
                 </tr>
-                <tr>
+                <tr id="linhajogador4">
                     <td id="player4">JOGADOR 4</td>
                     <td id="pontosj4">0</td>
                     <td id="quedasj4">0</td>

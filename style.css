@@ -17,7 +17,7 @@ div table{
 }
 div#tabelaprincipal{
     overflow-x: auto;
-    
+    display: none;
    
 }
 
@@ -46,4 +46,22 @@ input{
     padding: 10px;
     height: 100%;
     width: 100%;
+}
+/*div info jogadores*/
+div#infojogadores{
+    width: 60%;
+    margin: auto;
+    
+}
+div#infojogadores input.inputjogadores{
+    width: 100%;
+}
+div#infojogadores p{
+    font-size: 1.2em;
+    padding: 10px 10px 10px 0px;
+}
+#botaoproximo{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
 }

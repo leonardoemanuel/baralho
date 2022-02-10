@@ -1,19 +1,47 @@
-/*perguntas*/
-let p1=window.prompt('Jogador 1 :')
-let p2=window.prompt('Jogador 2 :')
-let p3=window.prompt('Jogador 3 :')
-let p4=window.prompt('Jogador 4 :')
-let max =window.prompt('Pontos maximos por partidas')
+function proximo(){
+    let linha1=document.getElementById('linhajogador1')
+    let linha2=document.getElementById('linhajogador2')
+    let linha3=document.getElementById('linhajogador3')
+    let linha4=document.getElementById('linhajogador4')
+    
+    let p1=document.getElementById('textjogador1')
+    let p2=document.getElementById('textjogador2')
+    let p3=document.getElementById('textjogador3')
+    let p4=document.getElementById('textjogador4')
+    
+    let j1=document.getElementById('player1')
+    let j2=document.getElementById('player2')
+    let j3=document.getElementById('player3')
+    let j4=document.getElementById('player4')
+    
+    
+    j1.innerText=`${p1.value}`
+    j2.innerText=`${p2.value}`
+    j3.innerText=`${p3.value}`
+    j4.innerText=`${p4.value}`
+    
+    if(p1.value.length==0){
+        linha1.style.display="none"
+    }
+    
+    if(p2.value.length==0){
+        linha2.style.display="none"
+    } 
+    
+    if(p3.value.length==0){
+        linha3.style.display="none"
+    }
+    
+    if(p4.value.length==0){
+        linha4.style.display="none"
+    }
 
-let j1=document.getElementById('player1')
-let j2=document.getElementById('player2')
-let j3=document.getElementById('player3')
-let j4=document.getElementById('player4')
-
-j1.innerText=`${p1}`
-j2.innerText=`${p2}`
-j3.innerText=`${p3}`
-j4.innerText=`${p4}`
+    let tabela=document.getElementById('tabelaprincipal')
+    tabela.style.display="block"
+    let informacoes=document.getElementById('infojogadores')
+    informacoes.style.display="none"
+}
+let max =document.getElementById('maxpontos')
 /*pontos iniciais*/
 let pontosj1=0
 let pontosj2=0
@@ -35,7 +63,7 @@ let qj4=document.getElementById('quedasj4')
 
 function adicionarj1(){
     pontosj1+=1
-    if(pontosj1>=max){
+    if(pontosj1>=max.value){
         quedasj1++
         pontosj1-=pontosj1
         pontosj2-=pontosj2
@@ -51,7 +79,7 @@ function adicionarj1(){
 }
 function adicionarj2(){
     pontosj2+=1
-    if(pontosj2>=max){
+    if(pontosj2>=max.value){
         quedasj2++
         pontosj1-=pontosj1
         pontosj2-=pontosj2
@@ -67,7 +95,7 @@ function adicionarj2(){
 }
 function adicionarj3(){
     pontosj3+=1
-    if(pontosj3>=max){
+    if(pontosj3>=max.value){
         quedasj3++
         pontosj1-=pontosj1
         pontosj2-=pontosj2
@@ -83,7 +111,7 @@ function adicionarj3(){
 }
 function adicionarj4(){
     pontosj4+=1
-    if(pontosj4>=max){
+    if(pontosj4>=max.value){
         quedasj4++
         pontosj1-=pontosj1
         pontosj2-=pontosj2
